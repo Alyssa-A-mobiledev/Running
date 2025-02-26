@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import RepetitionExercise from "./components/RepetitionExercise";
 import DurationExercise from "./components/DurationExercise";
 import RunningExercise from "./components/RunningExercise";
@@ -18,7 +18,6 @@ function Home() {
 
 function ExerciseButtons() {
   const navigate = useNavigate();
-
   return (
     <nav>
       <ul>
@@ -50,4 +49,3 @@ function App() {
 }
 
 export default App;
-
